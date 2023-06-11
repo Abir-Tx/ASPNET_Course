@@ -40,13 +40,12 @@ namespace RetroTechLanding.Controllers
 		{
 			MembersModel[] members = new MembersModel[]
 			{
-		new MembersModel("Abir", "22", "C++, ASP.NET, Python"),
-		new MembersModel("Nibir", "18", "Dart, Xamarin"),
-		new MembersModel("Alex", "20", "C#, Java, Python"),
-		new MembersModel("John", "19", "C++, C#, Java"),
-		new MembersModel("Smith", "21", "C++, C#, Java"),
-		new MembersModel("Doe", "22", "C++, C#, Java")
-
+				new MembersModel("Abir", "22", "C++, ASP.NET, Python"),
+				new MembersModel("Nibir", "18", "Dart, Xamarin"),
+				new MembersModel("Alex", "20", "C#, Java, Python"),
+				new MembersModel("John", "19", "C++, C#, Java"),
+				new MembersModel("Smith", "21", "HTML, C#, R"),
+				new MembersModel("Doe", "22", "C++, C#, Java")
 			};
 			return View(members);
 		}
