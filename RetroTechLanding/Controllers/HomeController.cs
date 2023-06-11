@@ -14,10 +14,7 @@ namespace RetroTechLanding.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
+        public ActionResult Services() {
             return View();
         }
 
