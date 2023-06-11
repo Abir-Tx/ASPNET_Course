@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Terms & Members";
+}
+
+<main>
+    <h1 class="text-center">@ViewBag.Title</h1>
+    <section>
+    <p>
+        We believ in customers happness and quality. So our terms are quite simple
+    </p>
+    <h3>RetroTech</h3>
+    <p>The name itself represents the company's focus on combining retro aesthetics with modern technology.</p>
+
+    <h3>Nostalgic Innovation</h3>
+    <p>This term highlights the company's mission of bringing the best of the past into the future through innovative tech solutions.</p>
+
+    <h3>Retro-inspired</h3>
+    <p>Describes the company's products and services that draw inspiration from vintage designs and styles.</p>
+    </section>
+
+
+    <section>
+        <h1 class="text-center">Members</h1>
+        <br>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Programming Language</th>
+                </tr>
+            </thead>
+
+            @foreach (var item in Model)
+            {
+            <tbody>
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Age</td>
+                    <td>@item.Developer_Lang</td>
+                </tr>
+            </tbody>
+            }
+
+        </table>
+    </section>
+</main>
+
+
