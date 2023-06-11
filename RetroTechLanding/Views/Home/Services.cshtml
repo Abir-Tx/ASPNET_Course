@@ -1,23 +1,38 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Services";
 }
 
 <main>
-    <section>
-        <h1 class="text-center">
-            @ViewBag.Title
-        </h1>
-        <br />
+  <section>
+    <h1 class="text-center">@ViewBag.Title</h1>
+    <br />
 
-        <p>
-            Welcome to Retrotech, where we bring the best of the past into the future of technology. With our innovative solutions and passion for retro-inspired designs, we offer a unique blend of nostalgia and cutting-edge technology.
-        </p>
-    </section>
+    <p>
+      Welcome to Retrotech, where we bring the best of the past into the future
+      of technology. With our innovative solutions and passion for
+      retro-inspired designs, we offer a unique blend of nostalgia and
+      cutting-edge technology.
+    </p>
+  </section>
 
+  <!--Show the services-->
+  <h1 class="text-center">We Provide</h1>
+  <br />
 
-    <!--Show the services-->
-    <h1 class="text-center">We Provide</h1>
-
-
+  <div class="row">
+    @foreach (var item in Model)
+    {
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">@item.Title </h5>
+          <p class="card-text">@item.Description</p>
+            <button class="btn btn-lg btn-primary mx-auto">@item.Cost</button>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+    
 </main>
+
