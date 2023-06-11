@@ -10,6 +10,7 @@ namespace RetroTechLanding.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.CompanyName = "Retro Tech";
             return View();
         }
 
