@@ -16,7 +16,7 @@ namespace RegistrationValidation.Models
         [Required (ErrorMessage = "The gender is required")]
         public string Gender { get; set; }
         [Required (ErrorMessage = "You must select a profession")]
-        public string Profession { get; set; }
+        public string[] Profession { get; set; }
         [Required (ErrorMessage = "You must provide your date of birth")]
         public DateTime Dob { get; set; }
         [Required (ErrorMessage = "Student ID is required")]
