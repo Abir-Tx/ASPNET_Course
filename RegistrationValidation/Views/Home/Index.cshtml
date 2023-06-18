@@ -1,7 +1,31 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Sign Up";
 }
 
 <main>
+    <section>
+        <div class="container">
+            <form method="post">
+                <input type="text" name="Name" class="form-control" value="@(Model != null ? Model.Name :"" )" placeholder="Name" />
+                <span class="text-danger">@Html.ValidationMessage("Name")</span>
+                <br />
+                <input type="text" name="Username" class="form-control" value="@(Model != null ? Model.Username : "")" placeholder="User Name" />
+                <span class="text-danger">@Html.ValidationMessage("Username")</span>
+                <br />
+                <label>Gender</label>
+                <input type="radio" checked="" name="Gender" value="Male" /> <label>Male</label>
+                <input type="radio" checked="" name="Gender" value="Female" /> <label>Female</label>
+                <span class="text-danger">@Html.ValidationMessage("Gender")</span>
+                <br />
+                <label>Profession</label>
+                <input type="checkbox" checked="" name="Profession[]" value="Student" /> <label>Student</label>
+                <input type="checkbox" checked="" name="Profession[]" value="Developer" /> <label>Developer</label>
+                <input type="checkbox" checked="" name="Profession[]" value="Manager" /> <label>Manager</label>
+                <span class="text-danger">@Html.ValidationMessage("Profession")</span>
 
+                <br />
+                <input type="submit" class="btn btn-success" />
+            </form>
+        </div>
+    </section>
 </main>
