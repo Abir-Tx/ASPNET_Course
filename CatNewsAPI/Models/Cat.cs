@@ -8,7 +8,7 @@ namespace CatNewsAPI.Models
     public class Cat
     {
         // Cat API properties for the database table
-        public String Id { get; set; }
+        public int Id { get; set; }
         public String Title { get; set; }
         public String Description { get; set; }
         public DateTime Date { get; set; }

@@ -101,6 +101,10 @@
     <Compile Include="Migrations\202307201039404_Init.designer.cs">
       <DependentUpon>202307201039404_Init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202307201702090_ChangeIdType.cs" />
+    <Compile Include="Migrations\202307201702090_ChangeIdType.designer.cs">
+      <DependentUpon>202307201702090_ChangeIdType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,6 +124,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202307201039404_Init.resx">
       <DependentUpon>202307201039404_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307201702090_ChangeIdType.resx">
+      <DependentUpon>202307201702090_ChangeIdType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
