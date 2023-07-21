@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using System.Data.Entity.SqlServer;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -10,6 +11,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using CatNewsAPI;
 using CatNewsAPI.Models;
+
 
 namespace CatNewsAPI.Controllers
 {
@@ -27,7 +29,7 @@ namespace CatNewsAPI.Controllers
 
         [HttpGet]
         [Route("api/cats/{id}")]
-        public HttpResponseMessage GetCatsById(int id)
+        public HttpResponseMessage GetCats(int id)
         {
             var selectedCat = db.Cats.Find(id);
             if (selectedCat == null)
@@ -39,11 +41,27 @@ namespace CatNewsAPI.Controllers
 
         [HttpGet]
         [Route("api/cats/title/{title}")]
-        public HttpResponseMessage GetCatsByTitle(string title)
+        public HttpResponseMessage GetCats(string title)
         {
-            return Request.CreateResponse(HttpStatusCode.OK, db.Cats.Find(title));
+            //var selectedCat = db.Cats.Where(cat => cat.Title == title).ToList();
+            try
+            {
+               // var selectedCat = db.Cats
+                 //   .Where(cat => cat.Title.IndexOf(title, StringComparison.OrdinalIgnoreCase) >= 0)
+               //     .ToList();
+                var selectedCat = db.Cats
+                .Where(cat => SqlFunctions.PatIndex("%" + title + "%", cat.Title) > 0)
+                .ToList();
 
+                return Request.CreateResponse(HttpStatusCode.OK, selectedCat);
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception appropriately, e.g., log the error and return an error response.
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, "An error occurred while fetching cats."+ ex);
+            }
         }
+
 
         [HttpPost]
         [Route("api/cats")]

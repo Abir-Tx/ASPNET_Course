@@ -13,7 +13,7 @@ namespace CatNewsAPI.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202307201039404_Init"; }
+            get { return "202307212006408_Init"; }
         }
         
         string IMigrationMetadata.Source

@@ -11,7 +11,7 @@
                 "dbo.Cats",
                 c => new
                     {
-                        Id = c.String(nullable: false, maxLength: 128),
+                        Id = c.Int(nullable: false, identity: true),
                         Title = c.String(),
                         Description = c.String(),
                         Date = c.DateTime(nullable: false),

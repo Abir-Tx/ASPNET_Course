@@ -97,13 +97,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202307201039404_Init.cs" />
-    <Compile Include="Migrations\202307201039404_Init.designer.cs">
-      <DependentUpon>202307201039404_Init.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202307201702090_ChangeIdType.cs" />
-    <Compile Include="Migrations\202307201702090_ChangeIdType.designer.cs">
-      <DependentUpon>202307201702090_ChangeIdType.cs</DependentUpon>
+    <Compile Include="Migrations\202307212006408_Init.cs" />
+    <Compile Include="Migrations\202307212006408_Init.designer.cs">
+      <DependentUpon>202307212006408_Init.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cat.cs" />
@@ -122,11 +118,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202307201039404_Init.resx">
-      <DependentUpon>202307201039404_Init.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202307201702090_ChangeIdType.resx">
-      <DependentUpon>202307201702090_ChangeIdType.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202307212006408_Init.resx">
+      <DependentUpon>202307212006408_Init.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
