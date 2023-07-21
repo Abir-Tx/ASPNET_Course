@@ -30,11 +30,15 @@ namespace CatNewsAPI.Controllers
         public HttpResponseMessage GetCatsById(int id)
         {
             var selectedCat = db.Cats.Find(id);
+            if (selectedCat == null)
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound, "Cat not found");
+            }
             return Request.CreateResponse(HttpStatusCode.OK,selectedCat);
         }
 
         [HttpGet]
-        [Route("api/cats/{title}")]
+        [Route("api/cats/title/{title}")]
         public HttpResponseMessage GetCatsByTitle(string title)
         {
             return Request.CreateResponse(HttpStatusCode.OK, db.Cats.Find(title));
