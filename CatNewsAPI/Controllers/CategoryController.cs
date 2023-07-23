@@ -28,7 +28,7 @@ namespace CatNewsAPI.Controllers
             var category = db.Categories.FirstOrDefault(cat => cat.Id == id);
             if (category == null)
             {
-                return Request.CreateResponse(HttpStatusCode.NotFound);
+                return Request.CreateResponse(HttpStatusCode.NotFound, "Category Not Found");
             }
             return Request.CreateResponse(HttpStatusCode.OK, category);
         }
