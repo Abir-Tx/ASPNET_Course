@@ -51,11 +51,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Repos\CatRepo.cs" />
+    <Compile Include="EF\CatNewsContext.cs" />
+    <Compile Include="EF\Models\Category.cs" />
+    <Compile Include="Migrations\202307230847027_Init.cs" />
+    <Compile Include="Migrations\202307230847027_Init.designer.cs">
+      <DependentUpon>202307230847027_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202307230847027_Init.resx">
+      <DependentUpon>202307230847027_Init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
