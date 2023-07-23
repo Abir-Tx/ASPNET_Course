@@ -23,8 +23,8 @@ namespace CatNewsAPI.Controllers
         [Route("api/news")]
         public HttpResponseMessage GetNews()
         {
-            var allCatData = db.Cats.ToList();
-            return Request.CreateResponse(HttpStatusCode.OK, allCatData);
+            var allNewsData = db.Cats.ToList();
+            return Request.CreateResponse(HttpStatusCode.OK, allNewsData);
         }
 
         [HttpGet]
@@ -57,7 +57,6 @@ namespace CatNewsAPI.Controllers
             }
             catch (Exception ex)
             {
-                // Handle the exception appropriately, e.g., log the error and return an error response.
                 return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, "An error occurred while fetching news."+ ex);
             }
         }
