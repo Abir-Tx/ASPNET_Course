@@ -34,7 +34,7 @@ namespace CatNewsAPI.Controllers
             var selectedCat = db.Cats.Find(id);
             if (selectedCat == null)
             {
-                return Request.CreateResponse(HttpStatusCode.NotFound, "Cat not found");
+                return Request.CreateResponse(HttpStatusCode.NotFound, "News not found");
             }
             return Request.CreateResponse(HttpStatusCode.OK,selectedCat);
         }
@@ -58,7 +58,7 @@ namespace CatNewsAPI.Controllers
             catch (Exception ex)
             {
                 // Handle the exception appropriately, e.g., log the error and return an error response.
-                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, "An error occurred while fetching cats."+ ex);
+                return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, "An error occurred while fetching news."+ ex);
             }
         }
 
@@ -69,7 +69,7 @@ namespace CatNewsAPI.Controllers
         {
             db.Cats.Add(cat);
             db.SaveChanges();
-            return Request.CreateResponse(HttpStatusCode.OK, "A new cat details inserted");
+            return Request.CreateResponse(HttpStatusCode.OK, "A new News posted");
         }
     }
 }

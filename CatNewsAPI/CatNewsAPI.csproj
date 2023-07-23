@@ -109,6 +109,10 @@
     <Compile Include="Migrations\202307230622208_ChangeCat.designer.cs">
       <DependentUpon>202307230622208_ChangeCat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202307230633162_AddCat.cs" />
+    <Compile Include="Migrations\202307230633162_AddCat.designer.cs">
+      <DependentUpon>202307230633162_AddCat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\News.cs" />
@@ -135,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202307230622208_ChangeCat.resx">
       <DependentUpon>202307230622208_ChangeCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307230633162_AddCat.resx">
+      <DependentUpon>202307230633162_AddCat.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
