@@ -5,7 +5,7 @@ using System.Web;
 
 namespace CatNewsAPI.Models
 {
-    public class Cat
+    public class News
     {
         // Cat API properties for the database table
         public int Id { get; set; }

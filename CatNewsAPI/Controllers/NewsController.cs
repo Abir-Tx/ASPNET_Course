@@ -15,21 +15,21 @@ using CatNewsAPI.Models;
 
 namespace CatNewsAPI.Controllers
 {
-    public class CatsController : ApiController
+    public class NewsController : ApiController
     {
         CFDatabaseContext db = new CFDatabaseContext();
 
         [HttpGet]
-        [Route("api/cats")]
-        public HttpResponseMessage GetCats()
+        [Route("api/news")]
+        public HttpResponseMessage GetNews()
         {
             var allCatData = db.Cats.ToList();
             return Request.CreateResponse(HttpStatusCode.OK, allCatData);
         }
 
         [HttpGet]
-        [Route("api/cats/{id}")]
-        public HttpResponseMessage GetCats(int id)
+        [Route("api/news/{id}")]
+        public HttpResponseMessage GetNews(int id)
         {
             var selectedCat = db.Cats.Find(id);
             if (selectedCat == null)
@@ -40,8 +40,8 @@ namespace CatNewsAPI.Controllers
         }
 
         [HttpGet]
-        [Route("api/cats/title/{title}")]
-        public HttpResponseMessage GetCats(string title)
+        [Route("api/news/title/{title}")]
+        public HttpResponseMessage GetNews(string title)
         {
             //var selectedCat = db.Cats.Where(cat => cat.Title == title).ToList();
             try
@@ -64,8 +64,8 @@ namespace CatNewsAPI.Controllers
 
 
         [HttpPost]
-        [Route("api/cats")]
-        public HttpResponseMessage PostCats(Cat cat)
+        [Route("api/news")]
+        public HttpResponseMessage PostNews(News cat)
         {
             db.Cats.Add(cat);
             db.SaveChanges();
