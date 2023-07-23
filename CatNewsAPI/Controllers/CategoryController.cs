@@ -28,5 +28,38 @@ namespace CatNewsAPI.Controllers
             db.SaveChanges();
             return Request.CreateResponse(HttpStatusCode.OK, "A new category added");
         }
+
+        // An API to update the category data
+        [HttpPut]
+        [Route("api/categories/{id}")]
+        public HttpResponseMessage PutCat(int id, Category category)
+        {
+            var catToUpdate = db.Categories.FirstOrDefault(cat => cat.Id == id);
+            if (catToUpdate == null)
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound);
+            }
+            catToUpdate.Name = category.Name;
+            db.SaveChanges();
+            return Request.CreateResponse(HttpStatusCode.OK, "Category updated");
+        }
+
+
+        // An API to delete the category data by id
+        [HttpDelete]
+        [Route("api/categories/{id}")]
+        public HttpResponseMessage DeleteCat(int id)
+        {
+            var catToDelete = db.Categories.FirstOrDefault(cat => cat.Id == id);
+            if (catToDelete == null)
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound);
+            }
+            db.Categories.Remove(catToDelete);
+            db.SaveChanges();
+            return Request.CreateResponse(HttpStatusCode.OK, "Category deleted");
+        }
+
+
     }
 }
