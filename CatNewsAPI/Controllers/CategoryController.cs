@@ -20,6 +20,20 @@ namespace CatNewsAPI.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, allCatData);
         }
 
+        // An API to get a category by id
+        [HttpGet]
+        [Route("api/categories/{id}")]
+        public HttpResponseMessage GetCatById(int id)
+        {
+            var category = db.Categories.FirstOrDefault(cat => cat.Id == id);
+            if (category == null)
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound);
+            }
+            return Request.CreateResponse(HttpStatusCode.OK, category);
+        }
+
+        // Post API
         [HttpPost]
         [Route("api/categories")]
         public HttpResponseMessage PostCat(Category category)
@@ -28,6 +42,7 @@ namespace CatNewsAPI.Controllers
             db.SaveChanges();
             return Request.CreateResponse(HttpStatusCode.OK, "A new category added");
         }
+
 
         // An API to update the category data
         [HttpPut]
