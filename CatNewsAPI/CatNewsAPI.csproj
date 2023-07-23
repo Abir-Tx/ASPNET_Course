@@ -114,6 +114,10 @@
     <Compile Include="Migrations\202307230633162_AddCat.designer.cs">
       <DependentUpon>202307230633162_AddCat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202307230835362_ChnageDB.cs" />
+    <Compile Include="Migrations\202307230835362_ChnageDB.designer.cs">
+      <DependentUpon>202307230835362_ChnageDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\News.cs" />
@@ -143,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202307230633162_AddCat.resx">
       <DependentUpon>202307230633162_AddCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307230835362_ChnageDB.resx">
+      <DependentUpon>202307230835362_ChnageDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
