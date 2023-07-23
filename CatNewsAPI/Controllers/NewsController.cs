@@ -64,9 +64,9 @@ namespace CatNewsAPI.Controllers
 
         [HttpPost]
         [Route("api/news")]
-        public HttpResponseMessage PostNews(News cat)
+        public HttpResponseMessage PostNews(News news)
         {
-            db.Cats.Add(cat);
+            db.News.Add(news);
             db.SaveChanges();
             return Request.CreateResponse(HttpStatusCode.OK, "A new News posted");
         }
