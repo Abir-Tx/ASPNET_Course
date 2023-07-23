@@ -23,7 +23,7 @@ namespace CatNewsAPI.Controllers
         [Route("api/news")]
         public HttpResponseMessage GetNews()
         {
-            var allNewsData = db.Cats.ToList();
+            var allNewsData = db.News.ToList();
             return Request.CreateResponse(HttpStatusCode.OK, allNewsData);
         }
 
@@ -31,7 +31,7 @@ namespace CatNewsAPI.Controllers
         [Route("api/news/{id}")]
         public HttpResponseMessage GetNews(int id)
         {
-            var selectedCat = db.Cats.Find(id);
+            var selectedCat = db.News.Find(id);
             if (selectedCat == null)
             {
                 return Request.CreateResponse(HttpStatusCode.NotFound, "News not found");
@@ -49,7 +49,7 @@ namespace CatNewsAPI.Controllers
                // var selectedCat = db.Cats
                  //   .Where(cat => cat.Title.IndexOf(title, StringComparison.OrdinalIgnoreCase) >= 0)
                //     .ToList();
-                var selectedCat = db.Cats
+                var selectedCat = db.News
                 .Where(cat => SqlFunctions.PatIndex("%" + title + "%", cat.Title) > 0)
                 .ToList();
 
