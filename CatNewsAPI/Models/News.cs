@@ -14,5 +14,7 @@ namespace CatNewsAPI.Models
         public DateTime Date { get; set; }
         public int CatId { get; set; }
 
+        public Category Category { get; set; }
+
     }
 }
