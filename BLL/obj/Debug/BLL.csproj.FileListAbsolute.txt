@@ -1,0 +1,12 @@
+C:\Users\Abir_\Code\GitHub\ASPNET_Course\BLL\bin\Debug\BLL.dll
+C:\Users\Abir_\Code\GitHub\ASPNET_Course\BLL\bin\Debug\BLL.pdb
+C:\Users\Abir_\Code\GitHub\ASPNET_Course\BLL\bin\Debug\DAL.dll
+C:\Users\Abir_\Code\GitHub\ASPNET_Course\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Abir_\Code\GitHub\ASPNET_Course\BLL\bin\Debug\DAL.pdb
+C:\Users\Abir_\Code\GitHub\ASPNET_Course\BLL\bin\Debug\DAL.dll.config
+C:\Users\Abir_\Code\GitHub\ASPNET_Course\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Abir_\Code\GitHub\ASPNET_Course\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Abir_\Code\GitHub\ASPNET_Course\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Abir_\Code\GitHub\ASPNET_Course\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Abir_\Code\GitHub\ASPNET_Course\BLL\obj\Debug\BLL.dll
+C:\Users\Abir_\Code\GitHub\ASPNET_Course\BLL\obj\Debug\BLL.pdb

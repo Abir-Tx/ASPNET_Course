@@ -93,7 +93,8 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="CFDatabaseContext.cs" />
-    <Compile Include="Controllers\CatsController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -101,8 +102,29 @@
     <Compile Include="Migrations\202307212006408_Init.designer.cs">
       <DependentUpon>202307212006408_Init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202307230609442_Init1.cs" />
+    <Compile Include="Migrations\202307230609442_Init1.designer.cs">
+      <DependentUpon>202307230609442_Init1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307230622208_ChangeCat.cs" />
+    <Compile Include="Migrations\202307230622208_ChangeCat.designer.cs">
+      <DependentUpon>202307230622208_ChangeCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307230633162_AddCat.cs" />
+    <Compile Include="Migrations\202307230633162_AddCat.designer.cs">
+      <DependentUpon>202307230633162_AddCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307230835362_ChnageDB.cs" />
+    <Compile Include="Migrations\202307230835362_ChnageDB.designer.cs">
+      <DependentUpon>202307230835362_ChnageDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307240643407_AddNewsInCategory.cs" />
+    <Compile Include="Migrations\202307240643407_AddNewsInCategory.designer.cs">
+      <DependentUpon>202307240643407_AddNewsInCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Cat.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\News.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -120,6 +142,21 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202307212006408_Init.resx">
       <DependentUpon>202307212006408_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307230609442_Init1.resx">
+      <DependentUpon>202307230609442_Init1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307230622208_ChangeCat.resx">
+      <DependentUpon>202307230622208_ChangeCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307230633162_AddCat.resx">
+      <DependentUpon>202307230633162_AddCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307230835362_ChnageDB.resx">
+      <DependentUpon>202307230835362_ChnageDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307240643407_AddNewsInCategory.resx">
+      <DependentUpon>202307240643407_AddNewsInCategory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

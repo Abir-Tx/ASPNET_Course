@@ -9,6 +9,7 @@ namespace CatNewsAPI
 {
     public class CFDatabaseContext:DbContext
     {
-        public DbSet<Cat> Cats { get; set; }
+        public DbSet<News> News { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }
