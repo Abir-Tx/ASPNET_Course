@@ -8,8 +8,10 @@ using System.Threading.Tasks;
 
 namespace DAL.EF
 {
-    public class CourseContext : DbContext
+    public class PreRegContext : DbContext
     {
         public DbSet<Course> Courses { get; set; }
+        public DbSet<Student> students { get; set; }
+
     }
 }
