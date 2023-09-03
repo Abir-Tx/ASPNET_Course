@@ -18,6 +18,12 @@ This repo holds the codes for my university ASP.NET course lab works and assignm
 
 As the course has already ended on **August 29, 2023**. I am archiving this repo as I will not use this repo for any other purposes anymore.
 
+## Note
+
+I have decided to delete an project from here which Sir taught us which was about the Tier Architecture base API building. As my project in this repo was having a lot of errors and I kind of now work on different projects & also the course has ended so I have decided to instead of fixing that, delete the project. The final project is based on TIER Architecture so that alone will be enough.
+
+- The name of the deleted project was: **_CatNewsApi_TierArch_** - Which ought to be a clone of the [CatNewsApi](https://github.com/Abir-Tx/ASPNET_Course/tree/7406241ab0da6031aad374df936718b0d308afa3/CatNewsAPI) project
+
 ## Contributors
 
 - [Mushfiqur Rahman Abir](https://github.com/abir-tx)
