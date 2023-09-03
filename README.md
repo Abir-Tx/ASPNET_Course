@@ -8,7 +8,7 @@ My Adavnced Programming with .NET course tasks, labs, projects. It's basically A
 
 The final project for this course is not hosted on this repo. As it was a collaborative project so I have kept the project to a separate repo.
 
-Visit the final project repo - [Here](https://github.com/Abir-Tx/EzWatchTicketing/tree/main)
+**_Visit the final project repo_** - [Here](https://github.com/Abir-Tx/EzWatchTicketing/tree/main)
 
 ## Description
 
@@ -16,7 +16,7 @@ This repo holds the codes for my university ASP.NET course lab works and assignm
 
 ## EOL of this repo
 
-As the course has already ended on August 29, 2023. I am archiving this repo as I will not use this repo for any other purposes anymore.
+As the course has already ended on **August 29, 2023**. I am archiving this repo as I will not use this repo for any other purposes anymore.
 
 ## Contributors
 
