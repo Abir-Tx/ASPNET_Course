@@ -6,3 +6,6 @@ For this purpose the **Views** and **Models** folder and files are edited in thi
 
 - No DB
 - No API
+
+## Screenshot
+![Registration_Validation-Project_by-Mushfiqur_Rahman_Abir](https://github.com/Abir-Tx/ASPNET_Course/assets/28858998/4937af2f-a715-44f0-8aa5-367b58fc989b)
