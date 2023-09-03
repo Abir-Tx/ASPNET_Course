@@ -4,6 +4,12 @@
 
 My Adavnced Programming with .NET course tasks, labs, projects. It's basically ASP.NET MVC course.
 
+## Final Project
+
+The final project for this course is not hosted on this repo. As it was a collaborative project so I have kept the project to a separate repo.
+
+Visit the final project repo - [Here](https://github.com/Abir-Tx/EzWatchTicketing/tree/main)
+
 ## Description
 
 This repo holds the codes for my university ASP.NET course lab works and assignments mostly. The course instructor was TANVIR AHMED sir.
