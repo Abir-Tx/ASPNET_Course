@@ -2,7 +2,7 @@
 
 ![aiub logo](https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/American_International_University-Bangladesh_Monogram.svg/200px-American_International_University-Bangladesh_Monogram.svg.png)
 
-My Adavnced Programming with .NET course tasks, labs, projects. It's basically ASP.NET MVC course.
+My Adavnced Programming with .NET course tasks, labs, projects. It's basically ASP.NET MVC course. You can view individual documentations for each projects inside their folders
 
 ## Final Project
 
